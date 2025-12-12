@@ -1,0 +1,150 @@
+.site-footer {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  padding: 3rem 0 0;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  padding-inline: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-column-brand {
+  flex-grow: 1.5;
+}
+
+/* Logo y Branding dentro del footer */
+.footer-column .logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.footer-column .logo-image {
+  height: 2.5rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.footer-column .logo-text {
+  font-family: var(--font-heading);
+  color: var(--blanco);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.footer-tagline {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.5rem;
+  max-width: 250px;
+  line-height: 1.4;
+}
+
+/* Títulos y Enlaces de columnas */
+.footer-column h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--blanco);
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-family: var(--font-body);
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: var(--blanco);
+  text-decoration: underline;
+}
+
+/* Iconos Sociales */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: opacity 0.2s;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+.social-icons img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* Parte inferior (Copyright) */
+.footer-bottom {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(42, 181, 227, 0.3);
+  text-align: center;
+  padding-inline: 1.5rem;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-body);
+}
+
+/* Ajuste Responsivo básico */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .footer-column-brand {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Onest:wght@400;500;700&display=swap');
+
+:root {
+  --azul-oscuro: #1e3a5f;
+  --azul-claro: #2ab5e3;
+  --naranja: #f37021;
+  --blanco: #ffffff;
+  --gris: #6d6e71;
+  --texto-claro: #ffffff;
+  --texto-oscuro-hover: #1e3a5f;
+
+  --font-heading: 'Exo 2', sans-serif;
+  --font-body: 'Onest', sans-serif;
+}
+
+/* --- AJUSTES GENERALES --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--blanco);
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--gris);
+  min-height: 100vh;
+}
+
+a, button {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: background-color 0.2s, color 0.2s, transform 0.1s;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--azul-oscuro);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* --- BOTONES GLOBALES --- */
+.btn {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-left: 0.5rem;
+}
+
+.btn:hover {
+  background-color: var(--blanco);
+  color: var(--texto-oscuro-hover);
+}
+
+.btn-login {
+  background-color: var(--azul-claro);
+  color: var(--texto-claro);
+}
+
+.btn-register {
+  background-color: var(--naranja);
+  color: var(--texto-claro);
+}
+
+/* BOTONES CTA */
+.btn-cta {
+  background-color: var(--naranja);
+  color: var(--texto-claro);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.75rem 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 15px rgba(243, 112, 33, 0.4);
+}
+
+.btn-cta:hover {
+  background-color: var(--blanco);
+  color: var(--texto-oscuro-hover);
+  box-shadow: 0 6px 20px rgba(243, 112, 33, 0.3);
+}
