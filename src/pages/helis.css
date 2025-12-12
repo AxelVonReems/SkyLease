@@ -26,7 +26,7 @@
   margin-inline: auto;
 }
 
-/* GRID LAYOUT */
+/* Grid */
 .helicopter-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -45,7 +45,7 @@
   }
 }
 
-/* CARD DESIGN */
+/* Tarjetas */
 .heli-card-item {
   background-color: var(--blanco);
   border-radius: 0.75rem;
@@ -119,19 +119,42 @@
   color: var(--azul-claro);
 }
 
+.heli-card-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
 .heli-btn {
-  background-color: var(--azul-oscuro);
+  text-align: center;
   border: none;
+  flex: 1;
   color: var(--texto-claro);
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 0.75rem 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: background-color 0.2s;
+  white-space: nowrap;
 }
 
-.heli-btn:hover {
+.primary-btn {
   background-color: var(--azul-claro);
+}
+
+.primary-btn:hover {
+  background-color: var(--azul-oscuro);
+  color: var(--texto-claro);
+}
+
+.secondary-btn {
+  background-color: var(--naranja);
+}
+
+.secondary-btn:hover {
+  background-color: var(--blanco);
+  color: var(--naranja) !important;
 }

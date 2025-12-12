@@ -1,27 +1,28 @@
-import { useRef } from 'react';
-import { Link } from 'react-router-dom';
 import './home.css'; 
+import HeroSection from '../components/HeroSection';
+import CarouselHeli from '../components/CarouselHeli';
+import FeaturesGrid from '../components/FeaturesGrid';
 
 const helicopteros = [
   {
     id: 1,
     name: "Airbus H130",
-    img: "/images/home/Heli1.png"
+    img: "/images/helicopters/h130.webp"
   },
   {
     id: 2,
     name: "Bell 206 JetRanger",
-    img: "/images/home/Heli2.png"
+    img: "/images/helicopters/bell206.webp"
   },
   {
     id: 3,
     name: "Robinson R44 Raven II",
-    img: "/images/home/Heli3.png"
+    img: "/images/helicopters/r44.webp"
   },
   {
     id: 4,
     name: "Sikorsky S-76",
-    img: "/images/home/Heli4.png"
+    img: "/images/helicopters/s76.webp"
   },
 ];
 
@@ -65,64 +66,11 @@ const features = [
 ];
 
 const Home = () => {
-  const scrollRef = useRef(null);
-
-  const scroll = (direction) => {
-    const { current } = scrollRef;
-    if (current) {
-      const scrollAmount = direction === 'left' ? -400 : 400; 
-      current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    }
-  };
-
   return (
     <main className="home-main">
-      <section className="hero-section">
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <h1 className="hero-title">SKYLEASE</h1>
-          <p className="hero-subtitle">
-            Descubre el mundo desde una nueva perspectiva. Tu aventura en los cielos comienza aquí.
-          </p>
-          <button className="btn-cta">Reserva</button>
-        </div>
-      </section>
-
-      <section className="heli-section">
-        <h2 className="section-title">Explora nuestros helicópteros</h2>
-        <div className="carousel-wrapper">
-          <button className="nav-btn prev" onClick={() => scroll('left')}>&#8249;</button>
-          <div className="scroll-container" ref={scrollRef}>
-            {helicopteros.map((heli) => (
-              <div key={heli.id} className="heli-card">
-                <div className="card-content">
-                  <img src={heli.img} alt={heli.name} />
-                  <h3>{heli.name}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
-          <button className="nav-btn next" onClick={() => scroll('right')}>&#8250;</button>
-        </div>
-        <Link to="/helicopteros" className="all-helis-btn">
-          Ver todos helicópteros
-        </Link>
-      </section>
-
-      <section className="feature-grid-section">
-        <h2 className="section-title">¿Por qué volar con SKYLEASE?</h2>
-        <div className="feature-grid">
-          {features.map((item) => (
-            <div key={item.id} className="feature-card">
-              <div className="card-icon">
-                <img src={item.icon} alt="" />
-              </div>
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <HeroSection />
+      <CarouselHeli helicopteros={helicopteros} />
+      <FeaturesGrid features={features} />
     </main>
   );
 };

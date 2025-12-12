@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "brand": "Robinson",
+    "model": "R44 Raven II",
+    "image": "/images/helicopters/r44.webp",
+    "capacity": 3,
+    "price": 450,
+    "description": "El helicóptero más popular del mundo para vuelos privados. Ideal para tours cortos y fotografía aérea gracias a su excelente visibilidad.",
+    "features": [
+      "Velocidad Máxima: 240 km/h",
+      "Autonomía: 550 km",
+      "Perfecto para vuelos turísticos y fotografía.",
+      "Motor de pistón Lycoming de alta fiabilidad."
+    ]
+  },
+  {
+    "id": 2,
+    "brand": "Bell",
+    "model": "206 JetRanger",
+    "image": "/images/helicopters/bell206.webp",
+    "capacity": 4,
+    "price": 850,
+    "description": "Un clásico de la aviación, conocido por su fiabilidad y seguridad. Perfecto para traslados ejecutivos de media distancia.",
+    "features": [
+      "Velocidad Máxima: 224 km/h",
+      "Autonomía: 693 km",
+      "Ideal para traslados corporativos eficientes.",
+      "Suspensión suave líder en su clase."
+    ]
+  },
+  {
+    "id": 3,
+    "brand": "Airbus",
+    "model": "H125 Écureuil",
+    "image": "/images/helicopters/h125.webp",
+    "capacity": 5,
+    "price": 1200,
+    "description": "Reconocido por su potencia y versatilidad en entornos de alta montaña. Ofrece una cabina espaciosa y climatizada.",
+    "features": [
+      "Velocidad Máxima: 287 km/h",
+      "Autonomía: 662 km",
+      "Rendimiento superior en grandes alturas.",
+      "Piso plano para carga fácil de equipaje."
+    ]
+  },
+  {
+    "id": 4,
+    "brand": "AgustaWestland",
+    "model": "AW109 Power",
+    "image": "/images/helicopters/aw109.webp",
+    "capacity": 6,
+    "price": 2100,
+    "description": "Sinónimo de elegancia y velocidad. Este bimotor es la opción preferida para transporte VIP corporativo rápido.",
+    "features": [
+      "Velocidad Máxima: 311 km/h",
+      "Autonomía: 932 km",
+      "La opción más rápida para transporte VIP.",
+      "Tren de aterrizaje retráctil aerodinámico."
+    ]
+  },
+  {
+    "id": 5,
+    "brand": "Robinson",
+    "model": "R66 Turbine",
+    "image": "/images/helicopters/r66.webp",
+    "capacity": 4,
+    "price": 650,
+    "description": "La evolución del R44 con motor de turbina. Ofrece mayor potencia, suavidad en el vuelo y un compartimento de equipaje amplio.",
+    "features": [
+      "Velocidad Máxima: 260 km/h",
+      "Autonomía: 600 km",
+      "Vuelo suave gracias a su motor de turbina.",
+      "Maletero dedicado de gran volumen (130 kg)."
+    ]
+  },
+  {
+    "id": 6,
+    "brand": "Eurocopter",
+    "model": "EC135",
+    "image": "/images/helicopters/ec135.webp",
+    "capacity": 6,
+    "price": 2300,
+    "description": "Famoso por su bajo nivel de ruido y seguridad bimotor. Ampliamente utilizado para servicios médicos y transporte de lujo.",
+    "features": [
+      "Velocidad Máxima: 254 km/h",
+      "Autonomía: 635 km",
+      "Operación extremadamente silenciosa.",
+      "Rotor de cola Fenestron para mayor seguridad."
+    ]
+  },
+  {
+    "id": 7,
+    "brand": "Sikorsky",
+    "model": "S-76D",
+    "image": "/images/helicopters/s76.webp",
+    "capacity": 8,
+    "price": 3500,
+    "description": "El estándar de oro en transporte ejecutivo. Una cabina silenciosa y lujosa comparable a un jet privado.",
+    "features": [
+      "Velocidad Máxima: 287 km/h",
+      "Autonomía: 760 km",
+      "Experiencia de lujo comparable a un jet privado.",
+      "Tecnología de reducción de vibraciones activas."
+    ]
+  },
+  {
+    "id": 8,
+    "brand": "Bell",
+    "model": "407 GXi",
+    "image": "/images/helicopters/bell407.webp",
+    "capacity": 6,
+    "price": 1500,
+    "description": "Combina velocidad, rendimiento y maniobrabilidad. Cuenta con una cabina configurada tipo club para reuniones en vuelo.",
+    "features": [
+      "Velocidad Máxima: 246 km/h",
+      "Autonomía: 624 km",
+      "Asientos configurados 'Club' para reuniones.",
+      "Aviónica Garmin G1000H NXi de última generación."
+    ]
+  },
+  {
+    "id": 9,
+    "brand": "MD Helicopters",
+    "model": "MD 500E",
+    "image": "/images/helicopters/md500.webp",
+    "capacity": 3,
+    "price": 900,
+    "description": "Compacto, ágil y muy rápido. Ideal para ejecutivos que necesitan moverse rápidamente entre helipuertos urbanos.",
+    "features": [
+      "Velocidad Máxima: 282 km/h",
+      "Autonomía: 430 km",
+      "Agilidad inigualable en entornos urbanos.",
+      "Diseño de rotor de 5 palas para estabilidad."
+    ]
+  },
+  {
+    "id": 10,
+    "brand": "Airbus",
+    "model": "H130",
+    "image": "/images/helicopters/h130.webp",
+    "capacity": 6,
+    "price": 1350,
+    "description": "Diseñado específicamente para el turismo y vuelos panorámicos. Posee la cabina más ancha de su categoría.",
+    "features": [
+      "Velocidad Máxima: 237 km/h",
+      "Autonomía: 610 km",
+      "La mejor visibilidad panorámica del mercado.",
+      "Cabina extra ancha y sistema antivibración."
+    ]
+  },
+  {
+    "id": 11,
+    "brand": "Leonardo",
+    "model": "AW139",
+    "image": "/images/helicopters/aw139.webp",
+    "capacity": 12,
+    "price": 4200,
+    "description": "Un helicóptero de tamaño medio líder en el mercado. Capacidad superior para grupos grandes sin sacrificar el lujo.",
+    "features": [
+      "Velocidad Máxima: 306 km/h",
+      "Autonomía: 1061 km",
+      "Ideal para grupos grandes y largas distancias.",
+      "Certificación de seguridad Categoría A."
+    ]
+  },
+  {
+    "id": 12,
+    "brand": "Bell",
+    "model": "429 GlobalRanger",
+    "image": "/images/helicopters/bell429.webp",
+    "capacity": 7,
+    "price": 2800,
+    "description": "Bimotor ligero con una cabina de vidrio excepcional. Ofrece un vuelo excepcionalmente suave y tecnología de punta.",
+    "features": [
+      "Velocidad Máxima: 287 km/h",
+      "Autonomía: 722 km",
+      "Puertas traseras tipo almeja (opcionales).",
+      "Cabina de cristal totalmente integrada."
+    ]
+  },
+  {
+    "id": 13,
+    "brand": "Guimbal",
+    "model": "Cabri G2",
+    "image": "/images/helicopters/cabri.webp",
+    "capacity": 1,
+    "price": 350,
+    "description": "Pequeño, moderno y eficiente. Perfecto para vuelos individuales, entrenamiento o desplazamientos muy cortos.",
+    "features": [
+      "Velocidad Máxima: 185 km/h",
+      "Autonomía: 700 km",
+      "Económico para vuelos individuales.",
+      "Estructura de cabina antichoque de alta seguridad."
+    ]
+  },
+  {
+    "id": 14,
+    "brand": "Airbus",
+    "model": "H145",
+    "image": "/images/helicopters/h145.webp",
+    "capacity": 9,
+    "price": 3100,
+    "description": "Versatilidad compacta con dos motores. Su diseño de rotor trasero fenestron garantiza seguridad en tierra y vuelo silencioso.",
+    "features": [
+      "Velocidad Máxima: 240 km/h",
+      "Autonomía: 680 km",
+      "Acceso trasero fácil para carga y equipaje.",
+      "Huella acústica reducida para zonas sensibles."
+    ]
+  },
+  {
+    "id": 15,
+    "brand": "Sikorsky",
+    "model": "S-92",
+    "image": "/images/helicopters/s92.webp",
+    "capacity": 19,
+    "price": 6500,
+    "description": "El gigante del transporte civil. Ofrece comodidades de baño completo y cabina de pie para grupos numerosos.",
+    "features": [
+      "Velocidad Máxima: 306 km/h",
+      "Autonomía: 998 km",
+      "Altura de cabina suficiente para estar de pie.",
+      "Incluye baño completo y rampa de carga."
+    ]
+  }
+]

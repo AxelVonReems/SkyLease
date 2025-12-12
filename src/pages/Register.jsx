@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// 1. Change import: Use the hook 'useUser' instead of UserContext
 import { useUser } from '../components/UserContext'; 
 import { useNavigate, Link } from 'react-router-dom';
 import './login.css'; 
@@ -8,15 +7,12 @@ function Register() {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
-  // 2. Use the custom hook here
   const { login } = useUser(); 
   
   const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
-    // Register simulates login in this prototype
     login(username);
     console.log("Usuario registrado:", { username, email });
     navigate('/');
@@ -29,10 +25,9 @@ function Register() {
         <form onSubmit={handleSubmit}>
           <h2>SKYLEASE</h2>
           <p style={{textAlign:'center', color: 'var(--gris)', marginBottom: '20px'}}>
-             Registro
+            Registro
           </p>
 
-          {/* CAMPO USUARIO */}
           <div>
             <label className='form-label'>Usuario:</label>
             <input
@@ -46,7 +41,6 @@ function Register() {
           </div>
           <br />
 
-          {/* CAMPO EMAIL */}
           <div>
             <label className='form-label'>Email</label>
             <input 
@@ -60,7 +54,6 @@ function Register() {
           </div>
           <br />
 
-          {/* CAMPO CONTRASEÑA */}
           <div>
             <label className='form-label'>Contraseña:</label>
             <input
@@ -74,7 +67,6 @@ function Register() {
           </div>
           <br />
 
-          {/* BOTÓN PRINCIPAL (Usa la clase btn-register global o form-button) */}
           <button type="submit" className='form-button btn-register'>
             CREAR CUENTA
           </button>
@@ -83,13 +75,12 @@ function Register() {
 
         <hr style={{margin: '20px 0', border: 'none', borderTop: '1px solid #eee'}}/>
 
-        {/* BOTÓN SECUNDARIO */}
         <div style={{ textAlign: 'center' }}>
             <p style={{ display: 'inline', color: 'var(--gris)', marginRight: '5px' }}>
-                ¿Ya eres miembro?
+              ¿Ya eres miembro?
             </p>
             <Link to="/login" className="register-link">
-                Iniciar sesión
+              Iniciar sesión
             </Link>
         </div>
       </div>

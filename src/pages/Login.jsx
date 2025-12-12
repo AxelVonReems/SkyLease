@@ -59,7 +59,6 @@ function Login() {
 
                 <hr style={{margin: '20px 0', border: 'none', borderTop: '1px solid #eee'}}/>
 
-                {/* AQUÍ ESTÁ EL CAMBIO: Texto + Enlace */}
                 <div style={{ textAlign: 'center' }}>
                     <p style={{ display: 'inline', color: 'var(--gris)', marginRight: '5px' }}>
                         ¿Aún no tienes cuenta?

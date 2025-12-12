@@ -1,8 +1,16 @@
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
+import { useUser } from './UserContext';
 import './header.css'; 
 
 const Header = () => {
+  const { user, logout } = useUser();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
+
   return (
     <header className="site-header">
       <div className="header-container">
@@ -22,23 +30,19 @@ const Header = () => {
             <li><a href="#precios" className="menu-link">Precios</a></li>
             <li><a href="#contactos" className="menu-link">Contactos</a></li>
             <li className="nav-separator"></li>
-            {/* <li>
-              <button 
-                className="btn btn-login" 
-                onClick={onLoginClick}
-              >
-                Iniciar sesión
-              </button>
-            </li> */}
-            
-              
-            <li><Link to="/login" className="btn btn-login">Iniciar sesión</Link></li>
-            <li><Link to="/register" className="btn btn-register">Registrarse</Link></li>
-            {/* <li>
-              <button className="btn btn-register">
-                Registrarse
-              </button>
-            </li> */}
+            {user ? (
+              <li className="user-welcome-container">
+                <span className="user-greeting">Hola, <b>{user.name}</b></span>
+                <button onClick={handleLogout} className="btn btn-logout">
+                  Salir
+                </button>
+              </li>
+            ) : (
+              <>
+                <li><Link to="/login" className="btn btn-login">Iniciar sesión</Link></li>
+                <li><Link to="/register" className="btn btn-register">Registrarse</Link></li>
+              </>
+            )}
           </ul>
         </nav>
       </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const CommentForm = ({ addComment }) => {
     const [comment, setComment] = useState('');
@@ -7,7 +7,7 @@ const CommentForm = ({ addComment }) => {
         e.preventDefault();
         if (comment.trim()) {
             addComment(comment.trim());
-            setComment(''); // Limpiar el campo
+            setComment('');
         }
     };
 
@@ -24,7 +24,6 @@ const CommentForm = ({ addComment }) => {
                     required
                 ></textarea>
             </div>
-            {/* Usamos la clase btn-register (Naranja) como CTA */}
             <button type="submit" className="btn btn-register comment-submit-btn">
                 Publicar Comentario
             </button>

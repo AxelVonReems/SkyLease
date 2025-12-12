@@ -19,7 +19,7 @@
   height: 4rem;
 }
 
-/* --- LOGOTIPO --- */
+/* Logotipo */
 .logo-link {
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@
   margin-left: 0.5rem;
 }
 
-/* --- NAVEGACIÓN --- */
+/* Navegación */
 .nav-desktop {
   display: flex;
 }
@@ -59,7 +59,6 @@
   padding: 0;
 }
 
-/* Enlaces del menú */
 .menu-link {
   color: var(--texto-claro);
   font-family: var(--font-body);
@@ -79,41 +78,46 @@
 /* Separador vertical */
 .nav-separator {
   border-left: 1px solid rgba(42, 181, 227, 0.5);
-  height: 1.5rem;
+  height: 2rem;
   margin-left: 1rem;
   margin-right: 0.5rem;
 }
 
-/* --- BOTONES DEL HEADER --- */
-/* Estilos base para botones */
-/* .btn {
-  font-weight: 500;
-  padding: 0.5rem 1.25rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin-left: 0.5rem;
-  border: none;
-  cursor: pointer;
-  font-family: var(--font-body);
-  transition: background-color 0.2s, color 0.2s, transform 0.1s;
-} */
+/* Usuario logueado */
+.user-welcome-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
-/* .btn:active {
-  transform: scale(0.98);
-} */
+.user-greeting {
+  color: var(--texto-claro);
+  font-family: var(--font-body);
+}
+
+/* Botones */
+.btn-logout {
+  background-color: var(--azul-claro);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn-logout:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
 .btn:hover {
   background-color: var(--blanco);
   color: var(--texto-oscuro-hover);
 }
 
-/* Botón Iniciar Sesión */
 .btn-login {
   background-color: var(--azul-claro);
   color: var(--texto-claro);
 }
 
-/* Botón Registrarse */
 .btn-register {
   background-color: var(--naranja);
   color: var(--texto-claro);

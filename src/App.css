@@ -13,7 +13,7 @@
   --font-body: 'Onest', sans-serif;
 }
 
-/* --- AJUSTES GENERALES --- */
+/* AJUSTES GENERALES */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -51,7 +51,7 @@ a, button {
   text-align: center;
 }
 
-/* --- BOTONES GLOBALES --- */
+/* BOTONES GLOBALES */
 .btn {
   font-weight: 600;
   padding: 0.5rem 1rem;

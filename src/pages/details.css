@@ -1,9 +1,4 @@
-/* NOTA: Asumimos que App.css ya está importado globalmente y define las variables :root
-   (ej: --azul-oscuro, --naranja, --font-heading) */
-
-/* --- Estilos del Contenedor Principal --- */
 .detail-page-wrapper {
-    /* Si no tienes un Header fijo, puedes quitar el padding-top */
     padding-top: 4rem;
     min-height: 100vh;
 }
@@ -14,7 +9,7 @@
     padding: 3rem 1.5rem;
 }
 
-/* --- Product Info Section (Detalle) --- */
+/* Detalles */
 .product-info {
     margin-bottom: 4rem;
     border-bottom: 1px solid rgba(110, 110, 110, 0.1);
@@ -102,11 +97,8 @@
     font-size: 1.1rem;
     padding: 0.8rem 3rem;
     display: inline-block;
-    /* El color del CTA debería ser Naranja según la guía, 
-     asumiendo que .btn-cta está definido en App.css */
 }
 
-/* --- Comment Section (Comentarios) --- */
 .comment-section {
     padding-top: 2rem;
 }
@@ -117,7 +109,6 @@
     color: var(--azul-oscuro);
     margin-bottom: 2rem;
     text-align: left;
-    /* Alineamos a la izquierda en esta sección */
 }
 
 .comment-form-container {
@@ -164,7 +155,7 @@
     margin-top: 0.5rem;
 }
 
-/* --- Comment List --- */
+/* Lista de comentarios */
 .comment-list {
     display: flex;
     flex-direction: column;
@@ -218,12 +209,10 @@
     padding: 2rem;
 }
 
-/* --- Media Queries para Responsive --- */
 @media (max-width: 992px) {
     .product-content {
         flex-direction: column;
     }
-
     .product-image-container,
     .product-details {
         max-width: 100%;
