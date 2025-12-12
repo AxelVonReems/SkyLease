@@ -26,6 +26,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# Vite
+.vite/
+
 # Environment variables
 .env
 .env.local
