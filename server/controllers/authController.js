@@ -44,7 +44,7 @@ const authController = {
 
       const token = jwt.sign(
         { id: user.id, role: user.role }, 
-        process.env.JWT_SECRET || 'secreto_super_seguro', // Usa la clave del .env
+        process.env.JWT_SECRET || 'secreto_super_seguro',
         { expiresIn: '2h' }
       );
 

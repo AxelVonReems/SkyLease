@@ -3,7 +3,7 @@ const Comment = require('../models/commentModel');
 const commentController = {
   getComments: async (req, res) => {
     try {
-      const { id } = req.params; // ID del helicóptero
+      const { id } = req.params;
       const comments = await Comment.getByHelicopterId(id);
       res.json(comments);
     } catch (error) {
